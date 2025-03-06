@@ -1,0 +1,82 @@
+.flex {
+    display: flex;
+}
+
+.main {
+    background-image: url(./images/main_image.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main .nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.main .nav .logo {
+    width: 100px;
+    height: 50px;
+}
+
+.main .nav .category {
+    position: absolute;
+    right: 500px;
+}
+
+.container .youtube {
+    margin: 30px 0;
+}
+
+/* 부모 컨테이너 설정 */
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 비율 (100 / 16 * 9) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    /* 부모 크기에 맞게 최대 넓이 100% */
+}
+
+/* iframe의 크기를 부모에 맞게 자동으로 맞추기 */
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sub div {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer .sns {
+    width: 100%;
+    height: 30px;
+}
+
+.footer .sns ul {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .sns ul li {
+    width: 10%;
+}
+
+.footer .sub_text {
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
